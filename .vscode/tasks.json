@@ -1,0 +1,35 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "cd build && cmake . && cd ..",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Compile",
+            "type": "shell",
+            "command": "cd build && make && cd ..",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Execute",
+            "type": "shell",
+            "command": "cd build && ./SFML3D && cd ..",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

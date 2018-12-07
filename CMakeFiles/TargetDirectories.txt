@@ -1,0 +1,3 @@
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/CMakeFiles/rebuild_cache.dir
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/CMakeFiles/SFML3D.dir
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/CMakeFiles/edit_cache.dir

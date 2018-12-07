@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build",
+  "command": "/usr/bin/c++   -isystem /usr/local/include   -std=c++1y -Wall -Wextra   -o CMakeFiles/SFML3D.dir/src/main.cpp.o -c \"/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/main.cpp\"",
+  "file": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/main.cpp"
+},
+{
+  "directory": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build",
+  "command": "/usr/bin/cc  -isystem /usr/local/include    -o CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o   -c \"/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/SOIL2.c\"",
+  "file": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/SOIL2.c"
+},
+{
+  "directory": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build",
+  "command": "/usr/bin/cc  -isystem /usr/local/include    -o CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.o   -c \"/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/etc1_utils.c\"",
+  "file": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/etc1_utils.c"
+},
+{
+  "directory": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build",
+  "command": "/usr/bin/cc  -isystem /usr/local/include    -o CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.o   -c \"/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/image_DXT.c\"",
+  "file": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/image_DXT.c"
+},
+{
+  "directory": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build",
+  "command": "/usr/bin/cc  -isystem /usr/local/include    -o CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_helper.c.o   -c \"/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/image_helper.c\"",
+  "file": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/image_helper.c"
+}
+]
