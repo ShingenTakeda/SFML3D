@@ -6,7 +6,25 @@
 
 #IncludeRegexTransform: 
 
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Draw.cpp
+include/Engine.hpp
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/Engine.hpp
+
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Engine.cpp
+include/Engine.hpp
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/Engine.hpp
+
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Update.cpp
+include/Engine.hpp
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/Engine.hpp
+
 /home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/SOIL2.h
+
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/Engine.hpp
+SFML/Window.hpp
+-
+GL/glew.h
+-
 
 /home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/Shader.hpp
 string

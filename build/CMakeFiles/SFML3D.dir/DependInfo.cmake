@@ -17,6 +17,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/local/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Draw.cpp" "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles/SFML3D.dir/src/Draw.cpp.o"
+  "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Engine.cpp" "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles/SFML3D.dir/src/Engine.cpp.o"
+  "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Update.cpp" "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles/SFML3D.dir/src/Update.cpp.o"
   "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/main.cpp" "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles/SFML3D.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

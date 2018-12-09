@@ -1,6 +1,21 @@
 [
 {
   "directory": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build",
+  "command": "/usr/bin/c++   -isystem /usr/local/include   -std=c++1y -Wall -Wextra   -o CMakeFiles/SFML3D.dir/src/Draw.cpp.o -c \"/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Draw.cpp\"",
+  "file": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Draw.cpp"
+},
+{
+  "directory": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build",
+  "command": "/usr/bin/c++   -isystem /usr/local/include   -std=c++1y -Wall -Wextra   -o CMakeFiles/SFML3D.dir/src/Engine.cpp.o -c \"/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Engine.cpp\"",
+  "file": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Engine.cpp"
+},
+{
+  "directory": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build",
+  "command": "/usr/bin/c++   -isystem /usr/local/include   -std=c++1y -Wall -Wextra   -o CMakeFiles/SFML3D.dir/src/Update.cpp.o -c \"/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Update.cpp\"",
+  "file": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/Update.cpp"
+},
+{
+  "directory": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build",
   "command": "/usr/bin/c++   -isystem /usr/local/include   -std=c++1y -Wall -Wextra   -o CMakeFiles/SFML3D.dir/src/main.cpp.o -c \"/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/main.cpp\"",
   "file": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/main.cpp"
 },
