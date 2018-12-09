@@ -140,7 +140,7 @@ int main()
 
     glm::mat4 transform;
     transform = glm::translate(transform, glm::vec3(0.5f, -0.5f, 0.0f));
-    transform = glm::rotate(transform, static_cast<GLfloat> (dtAsSeconds * -0.5f), glm::vec3(0.0f, 0.0f, 1.0f));
+    transform = glm::rotate(transform, (GLfloat)dtAsSeconds * -0.5f, glm::vec3(0.0f, 0.0f, 1.0f));
 
     GLint transformLocation = glGetUniformLocation(ourShader.Program, "transform");
 
