@@ -19,7 +19,12 @@ int main()
 {
   //Setting up a clock for updates
   sf::Clock clock;
-  sf::Time timeElapsed = clock.getElapsedTime();
+  sf::Time timeElapsed;
+  sf::Time dt = clock.restart();
+
+  timeElapsed += dt;
+
+  float dtAsSeconds = dt.asSeconds();
 
   sf::ContextSettings settings;
   settings.depthBits = 24;
@@ -135,7 +140,7 @@ int main()
 
     glm::mat4 transform;
     transform = glm::translate(transform, glm::vec3(0.5f, -0.5f, 0.0f));
-    transform = glm::rotate(transform, static_cast<GLfloat> (timeElapsed * -0.5f), glm::vec3(0.0f, 0.0f, 1.0f));
+    transform = glm::rotate(transform, static_cast<GLfloat> (dtAsSeconds * -0.5f), glm::vec3(0.0f, 0.0f, 1.0f));
 
     GLint transformLocation = glGetUniformLocation(ourShader.Program, "transform");
 
