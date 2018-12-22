@@ -26,6 +26,20 @@ SFML/Window.hpp
 GL/glew.h
 -
 
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/GLSLShader.cpp
+iostream
+-
+GLSLShader.hpp
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/GLSLShader.hpp
+fstream
+-
+
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/GLSLShader.hpp
+map
+-
+GL/glew.h
+-
+
 /home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/main.cpp
 iostream
 -
@@ -39,6 +53,8 @@ glm/gtc/matrix_transform.hpp
 -
 glm/gtc/type_ptr.hpp
 -
+include/GLSLShader.hpp
+/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/GLSLShader.hpp
 dependencies/SOIL2/SOIL2.h
 /home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/SOIL2.h
 
