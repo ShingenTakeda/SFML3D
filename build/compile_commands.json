@@ -21,6 +21,11 @@
 },
 {
   "directory": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build",
+  "command": "/usr/bin/c++   -isystem /usr/local/include   -std=c++1y -Wall -Wextra   -o CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o -c \"/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/GLSLShader.cpp\"",
+  "file": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/GLSLShader.cpp"
+},
+{
+  "directory": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build",
   "command": "/usr/bin/cc  -isystem /usr/local/include    -o CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o   -c \"/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/SOIL2.c\"",
   "file": "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/SOIL2.c"
 },

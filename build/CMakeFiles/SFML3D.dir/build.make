@@ -153,9 +153,33 @@ CMakeFiles/SFML3D.dir/src/main.cpp.o.provides: CMakeFiles/SFML3D.dir/src/main.cp
 CMakeFiles/SFML3D.dir/src/main.cpp.o.provides.build: CMakeFiles/SFML3D.dir/src/main.cpp.o
 
 
+CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o: CMakeFiles/SFML3D.dir/flags.make
+CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o: ../src/include/GLSLShader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o -c "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/GLSLShader.cpp"
+
+CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/GLSLShader.cpp" > CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.i
+
+CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/include/GLSLShader.cpp" -o CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.s
+
+CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o.requires:
+
+.PHONY : CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o.requires
+
+CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o.provides: CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o.requires
+	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o.provides.build
+.PHONY : CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o.provides
+
+CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o.provides.build: CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o
+
+
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o: CMakeFiles/SFML3D.dir/flags.make
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o: ../src/dependencies/SOIL2/SOIL2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o   -c "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/SOIL2.c"
 
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o.provides.build: CMakeFile
 
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.o: CMakeFiles/SFML3D.dir/flags.make
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.o: ../src/dependencies/SOIL2/etc1_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.o   -c "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/etc1_utils.c"
 
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.o.provides.build: CMak
 
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.o: CMakeFiles/SFML3D.dir/flags.make
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.o: ../src/dependencies/SOIL2/image_DXT.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.o   -c "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/image_DXT.c"
 
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.o.provides.build: CMake
 
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_helper.c.o: CMakeFiles/SFML3D.dir/flags.make
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_helper.c.o: ../src/dependencies/SOIL2/image_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_helper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_helper.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_helper.c.o   -c "/home/gustavo/Documents/C++/SFML Exercises/SFML3D/src/dependencies/SOIL2/image_helper.c"
 
 CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_helper.c.i: cmake_force
@@ -255,6 +279,7 @@ SFML3D_OBJECTS = \
 "CMakeFiles/SFML3D.dir/src/Engine.cpp.o" \
 "CMakeFiles/SFML3D.dir/src/Update.cpp.o" \
 "CMakeFiles/SFML3D.dir/src/main.cpp.o" \
+"CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o" \
 "CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o" \
 "CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.o" \
 "CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.o" \
@@ -267,6 +292,7 @@ SFML3D: CMakeFiles/SFML3D.dir/src/Draw.cpp.o
 SFML3D: CMakeFiles/SFML3D.dir/src/Engine.cpp.o
 SFML3D: CMakeFiles/SFML3D.dir/src/Update.cpp.o
 SFML3D: CMakeFiles/SFML3D.dir/src/main.cpp.o
+SFML3D: CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o
 SFML3D: CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o
 SFML3D: CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.o
 SFML3D: CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.o
@@ -275,13 +301,15 @@ SFML3D: CMakeFiles/SFML3D.dir/build.make
 SFML3D: /usr/lib/x86_64-linux-gnu/libGLEW.so
 SFML3D: /usr/lib/x86_64-linux-gnu/libGL.so
 SFML3D: /usr/lib/x86_64-linux-gnu/libGLU.so
+SFML3D: ../src/include/Maths/Vector.hpp
+SFML3D: ../src/include/Maths/Vector.cpp
 SFML3D: /usr/local/lib/libsfml-graphics.so.2.5.0
 SFML3D: /usr/local/lib/libsfml-audio.so.2.5.0
 SFML3D: /usr/local/lib/libsfml-network.so.2.5.0
 SFML3D: /usr/local/lib/libsfml-window.so.2.5.0
 SFML3D: /usr/local/lib/libsfml-system.so.2.5.0
 SFML3D: CMakeFiles/SFML3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable SFML3D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/gustavo/Documents/C++/SFML Exercises/SFML3D/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable SFML3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SFML3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -293,6 +321,7 @@ CMakeFiles/SFML3D.dir/requires: CMakeFiles/SFML3D.dir/src/Draw.cpp.o.requires
 CMakeFiles/SFML3D.dir/requires: CMakeFiles/SFML3D.dir/src/Engine.cpp.o.requires
 CMakeFiles/SFML3D.dir/requires: CMakeFiles/SFML3D.dir/src/Update.cpp.o.requires
 CMakeFiles/SFML3D.dir/requires: CMakeFiles/SFML3D.dir/src/main.cpp.o.requires
+CMakeFiles/SFML3D.dir/requires: CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o.requires
 CMakeFiles/SFML3D.dir/requires: CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o.requires
 CMakeFiles/SFML3D.dir/requires: CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.o.requires
 CMakeFiles/SFML3D.dir/requires: CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.o.requires

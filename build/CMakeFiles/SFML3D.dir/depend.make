@@ -168,7 +168,6 @@ CMakeFiles/SFML3D.dir/src/Update.cpp.o: /usr/local/include/SFML/Window/WindowHan
 CMakeFiles/SFML3D.dir/src/Update.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
 CMakeFiles/SFML3D.dir/src/main.cpp.o: ../src/dependencies/SOIL2/SOIL2.h
-CMakeFiles/SFML3D.dir/src/main.cpp.o: ../src/include/Shader.hpp
 CMakeFiles/SFML3D.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/SFML3D.dir/src/main.cpp.o: /usr/local/include/SFML/Config.hpp
 CMakeFiles/SFML3D.dir/src/main.cpp.o: /usr/local/include/SFML/System.hpp

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SFML3D.dir/src/Engine.cpp.o"
   "CMakeFiles/SFML3D.dir/src/Update.cpp.o"
   "CMakeFiles/SFML3D.dir/src/main.cpp.o"
+  "CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o"
   "CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/SOIL2.c.o"
   "CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/etc1_utils.c.o"
   "CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_DXT.c.o"

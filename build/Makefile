@@ -312,6 +312,33 @@ src/dependencies/SOIL2/image_helper.c.s:
 	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/dependencies/SOIL2/image_helper.c.s
 .PHONY : src/dependencies/SOIL2/image_helper.c.s
 
+src/include/GLSLShader.o: src/include/GLSLShader.cpp.o
+
+.PHONY : src/include/GLSLShader.o
+
+# target to build an object file
+src/include/GLSLShader.cpp.o:
+	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.o
+.PHONY : src/include/GLSLShader.cpp.o
+
+src/include/GLSLShader.i: src/include/GLSLShader.cpp.i
+
+.PHONY : src/include/GLSLShader.i
+
+# target to preprocess a source file
+src/include/GLSLShader.cpp.i:
+	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.i
+.PHONY : src/include/GLSLShader.cpp.i
+
+src/include/GLSLShader.s: src/include/GLSLShader.cpp.s
+
+.PHONY : src/include/GLSLShader.s
+
+# target to generate assembly for a file
+src/include/GLSLShader.cpp.s:
+	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/include/GLSLShader.cpp.s
+.PHONY : src/include/GLSLShader.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -369,6 +396,9 @@ help:
 	@echo "... src/dependencies/SOIL2/image_helper.o"
 	@echo "... src/dependencies/SOIL2/image_helper.i"
 	@echo "... src/dependencies/SOIL2/image_helper.s"
+	@echo "... src/include/GLSLShader.o"
+	@echo "... src/include/GLSLShader.i"
+	@echo "... src/include/GLSLShader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

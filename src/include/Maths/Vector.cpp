@@ -26,7 +26,7 @@ vec2 operator-(const vec2& l, const vec2& r)
     return{l.x - r.x, l.y - r.y};
 }
 
-vec3 operator-(const vec3 l, const vec3& r)
+vec3 operator-(const vec3& l, const vec3& r)
 {
     return{l.x - r.x, l.y - r.y, l.z - r.z};
 }
@@ -126,4 +126,53 @@ vec2 Normalized(const vec2& v)
 vec3 Normalized(const vec3& v)
 {
     return v * (1.0f / Magnitude(v));
+}
+
+//Functions for cross product operations
+vec3 Cross(const vec3& l, const vec3& r)
+{
+    vec3 result;
+
+    result.x = l.y * r.z - l.z * r.y;
+    result.y = l.z * r.x - l.x * r.z;
+    result.z = l.x * r.y - l.y * r.x;
+
+    return result;
+}
+
+//Functions for projections and perpendicular stuff
+vec2 Project(const vec2& length, const vec2& direction)
+{
+    float dot = Dot(length, direction);
+    float magSq = MagnitudeSqr(direction);
+    return direction * (dot / magSq);
+}
+vec3 Project(const vec3& length, const vec3& direction)
+{
+    float dot = Dot(length, direction);
+    float magSq = MagnitudeSqr(direction);
+    return direction * (dot / magSq);
+}
+
+vec2 Perpendicular(const vec2& len, const vec2& dir)
+{
+    return len - Project(len, dir);
+}
+
+vec3 Perpendicular(const vec3& len, const vec3& dir)
+{
+    return len - Project(len, dir);
+}
+
+//Functions for reflections
+vec2 Reflections(const vec2& sourceVector, const vec2& normal)
+{
+    float d = Dot(sourceVector, normal);
+    return  sourceVector - normal * (d * 2.0f);
+}
+
+vec3 Reflections(const vec3& sourceVector, const vec3& normal)
+{
+    float d = Dot(sourceVector, normal);
+    return  sourceVector - normal * (d * 2.0f);
 }

@@ -7,13 +7,60 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+#include "include/GLSLShader.hpp"
 #include "dependencies/SOIL2/SOIL2.h"
-
-#include "include/Shader.hpp"
 
 const GLint WIDTH = 800, HEIGHT = 600;
 
+GLSLShader shader;
+
+//Vertex array and vertex buffer objects IDs
+GLuint vaoID;
+GLuint vboVerticesID;
+GLuint vboIndicesID;
+
+struct Vertex
+{
+  glm::vec3 position;
+  glm::vec3 color;
+};
+
+//Triangle vertices and indices
+Vertex vertices[3];
+GLushort indices[3];
+
+//Projection and modelview
+glm::mat4 P = glm::mat4(1);
+glm::mat4 MV = glm::mat4(1);
+
 //TODO: Manage to cast timeElapsed into a GLfloat
+
+void OnInit()
+{
+  //Load the shaders
+  shader.LoadFromFile(GL_VERTEX_SHADER,
+  "shader/shader.vert");
+
+  shader.LoadFromFile(GL_FRAGMENT_SHADER,
+  "shaders/shader.frag");
+
+  //Compile and link the shaders
+  shader.CreateAndLinkProgram();
+  shader.Use();
+
+  //Add attributes and uniforms
+  shader.AddAttribute("vVertex");
+  shader.AddAttribute("vColor");
+  shader.AddUniform("MVP");
+
+  shader.StopUsing();
+}
+
+void OnRender()
+{
+  //Clear depth and color buffers
+  glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+}
 
 int main() 
 {
@@ -36,135 +83,54 @@ int main()
 
   settings.attributeFlags = sf::ContextSettings::Core;
 
-  //Opening the window
-  sf::Window window(sf::VideoMode(WIDTH, HEIGHT, 32), "OpenGL Lessons", sf::Style::Titlebar | sf::Style::Close, settings);
-
+  //GLEW A.K.A opengl stuff here
   glewExperimental = GL_TRUE;
+  GLenum err = glewInit();
 
-  if (GLEW_OK != glewInit()) 
+  if(GLEW_OK != err)
   {
-    std::cout << "Failed to initialize GLEW!" << std::endl;
-
-    return EXIT_FAILURE;
+    std::cerr<<"Error"<<glewGetErrorString(err)<<std::endl;
+  }
+  else
+  {
+    if(GLEW_VERSION_3_3)
+    {
+      std::cout<<"Driver supports openGL 3.3\nDetails:"<<std::endl;
+    }
   }
 
+  std::cout<<"\tUsing glew "<<glewGetString(GLEW_VERSION)<<std::endl;
+  std::cout<<"\tVendor: "<<glGetString (GL_VENDOR)<<std::endl;
+  std::cout<<"\tRenderer: "<<glGetString (GL_RENDERER)<<std::endl;
+  std::cout<<"\tVersion: "<<glGetString (GL_VERSION)<<std::endl;
+  std::cout<<"\tGLSL: "<<glGetString(GL_SHADING_LANGUAGE_VERSION)<<std::endl;
+
+  //Opening the window
+  sf::Window window(sf::VideoMode(WIDTH, HEIGHT, 32), 
+  "OpenGL Lessons", sf::Style::Titlebar | sf::Style::Close, settings);
+
+
   bool running = true;
-
-  glEnable(GL_BLEND);
-  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
- Shader ourShader("midia/shaders/core.vs", "midia/shaders/core.frag");
-
-  //Texturing a rectangle
-  GLfloat vertices[] =
-  {
-    //Position            //Color             //Texture Coordinates
-    0.5f, 0.5f, 0.0f,     1.0f, 0.0f, 0.0f,    1.0f, 1.0f,         //Top right
-    0.5f, -0.5f, 0.0f,    1.0f, 1.0f, 1.0f,    1.0f, 0.0f,         //Bottom right
-    -0.5f, -0.5f, 0.0f,   1.0f, 0.0f, 0.0f,    0.0f, 0.0f,         //Bottom left
-    -0.5f, 0.5, 0.0f,     1.0f, 0.0f, 0.0f,    0.0f, 1.0f          //Top left
-  };
-
-  GLuint indices[] =
-  {
-    0, 1, 3,   //First triangle
-    1, 2, 3    //Second triangle
-  };
-
-  //Making the buffers and the vertex array
-  GLuint VBO, VAO, EBO;
-  glGenVertexArrays(1, &VAO);
-  glGenBuffers(1, &VBO);
-  glGenBuffers(1, &EBO);
-
-  glBindVertexArray(VAO);
-
-  glBindBuffer(GL_ARRAY_BUFFER, VBO);
-  glBufferData(GL_ARRAY_BUFFER, (sizeof(vertices)), vertices, GL_STATIC_DRAW);
-
-  glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-  glBufferData(GL_ELEMENT_ARRAY_BUFFER, (sizeof(indices)), indices, GL_STATIC_DRAW);
-
-  //Creating the position attribute
-  glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid *) 0);
-  glEnableVertexAttribArray(0);
-
-  //Create the color attribute
-  glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid *) (3 * sizeof(GLfloat)));
-  glEnableVertexAttribArray(1);
-
-  //Create a texture coordinate attribute
-  glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLvoid *) (6 * sizeof(GLfloat)));
-  glEnableVertexAttribArray(2);
-  
-  GLuint texture;
-
-  int width, height;
-  glGenTextures(1, &texture),
-  glBindTexture(GL_TEXTURE_2D, texture);
-
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
-  unsigned char *image = SOIL_load_image("midia/images/image2.png", &width, &height, 0, SOIL_LOAD_RGBA);
-  glTexImage2D(GL_TEXTURE_2D, 0,GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
-  glGenerateMipmap(GL_TEXTURE_2D);
-  SOIL_free_image_data(image);
-  glBindTexture(GL_TEXTURE_2D, 0);
-
-  glBindVertexArray(0);
 
   while (running) 
   {
     sf::Event windowEvent;
 
-    //TODO: Fix this warning
     while (window.pollEvent(windowEvent)) 
     {
-      switch (windowEvent.type) 
+      if(windowEvent.type == sf::Event::Closed)
       {
-        case sf::Event::Closed:
-          running = false;
-
-          break;
+        window.close();
       }
     }
-
-    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
-
-    ourShader.Use();
-
-    glm::mat4 transform;
-    transform = glm::translate(transform, glm::vec3(0.5f, -0.5f, 0.0f));
-    transform = glm::rotate(transform, (GLfloat)dtAsSeconds * -0.5f, glm::vec3(0.0f, 0.0f, 1.0f));
-
-    GLint transformLocation = glGetUniformLocation(ourShader.Program, "transform");
-
-    glUniformMatrix4fv(transformLocation, 1, GL_FALSE, glm::value_ptr(transform));
-
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture);
-    glUniform1i(glGetUniformLocation(ourShader.Program, "Our Texture"), 0);
-
-    glBindVertexArray(VAO);
-
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-    glBindVertexArray(0);
+    window.setActive();
 
     //Draw openGl
+    OnInit();
+    OnRender();
 
     window.display();
   }
-
-  glDeleteVertexArrays(1, &VAO);
-  glDeleteBuffers(1, &VBO);
-  glDeleteBuffers(1, &EBO);
-
-  window.close();
 
   return 0;
 }

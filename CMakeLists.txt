@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 2.8)
 
 project(SFML3D)
 
-file(GLOB HEADERS "src/include/*.hpp")
-file(GLOB SOURCE "src/*.cpp")
+file(GLOB HEADERS "src/include/*.hpp" "src/include/ECS/Core/*.hpp" "src/include/ECS/*.hpp")
+file(GLOB SOURCE "src/*.cpp" "src/include/*.cpp")
 file(GLOB SOIL2 "src/dependencies/SOIL2/*.c" "src/dependencies/SOIL2/*.h")
 file(GLOB MATHS "src/include/Maths/*.hpp" "src/include/Maths/*.cpp")
 
