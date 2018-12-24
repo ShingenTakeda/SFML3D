@@ -123,87 +123,6 @@ SFML3D/fast:
 	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/build
 .PHONY : SFML3D/fast
 
-src/Draw.o: src/Draw.cpp.o
-
-.PHONY : src/Draw.o
-
-# target to build an object file
-src/Draw.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/Draw.cpp.o
-.PHONY : src/Draw.cpp.o
-
-src/Draw.i: src/Draw.cpp.i
-
-.PHONY : src/Draw.i
-
-# target to preprocess a source file
-src/Draw.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/Draw.cpp.i
-.PHONY : src/Draw.cpp.i
-
-src/Draw.s: src/Draw.cpp.s
-
-.PHONY : src/Draw.s
-
-# target to generate assembly for a file
-src/Draw.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/Draw.cpp.s
-.PHONY : src/Draw.cpp.s
-
-src/Engine.o: src/Engine.cpp.o
-
-.PHONY : src/Engine.o
-
-# target to build an object file
-src/Engine.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/Engine.cpp.o
-.PHONY : src/Engine.cpp.o
-
-src/Engine.i: src/Engine.cpp.i
-
-.PHONY : src/Engine.i
-
-# target to preprocess a source file
-src/Engine.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/Engine.cpp.i
-.PHONY : src/Engine.cpp.i
-
-src/Engine.s: src/Engine.cpp.s
-
-.PHONY : src/Engine.s
-
-# target to generate assembly for a file
-src/Engine.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/Engine.cpp.s
-.PHONY : src/Engine.cpp.s
-
-src/Update.o: src/Update.cpp.o
-
-.PHONY : src/Update.o
-
-# target to build an object file
-src/Update.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/Update.cpp.o
-.PHONY : src/Update.cpp.o
-
-src/Update.i: src/Update.cpp.i
-
-.PHONY : src/Update.i
-
-# target to preprocess a source file
-src/Update.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/Update.cpp.i
-.PHONY : src/Update.cpp.i
-
-src/Update.s: src/Update.cpp.s
-
-.PHONY : src/Update.s
-
-# target to generate assembly for a file
-src/Update.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML3D.dir/build.make CMakeFiles/SFML3D.dir/src/Update.cpp.s
-.PHONY : src/Update.cpp.s
-
 src/dependencies/SOIL2/SOIL2.o: src/dependencies/SOIL2/SOIL2.c.o
 
 .PHONY : src/dependencies/SOIL2/SOIL2.o
@@ -375,15 +294,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... SFML3D"
 	@echo "... edit_cache"
-	@echo "... src/Draw.o"
-	@echo "... src/Draw.i"
-	@echo "... src/Draw.s"
-	@echo "... src/Engine.o"
-	@echo "... src/Engine.i"
-	@echo "... src/Engine.s"
-	@echo "... src/Update.o"
-	@echo "... src/Update.i"
-	@echo "... src/Update.s"
 	@echo "... src/dependencies/SOIL2/SOIL2.o"
 	@echo "... src/dependencies/SOIL2/SOIL2.i"
 	@echo "... src/dependencies/SOIL2/SOIL2.s"

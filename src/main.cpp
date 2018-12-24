@@ -132,13 +132,13 @@ void OnShutDown()
 int main() 
 {
   //Setting up a clock for updates
-  sf::Clock clock;
-  sf::Time timeElapsed;
-  sf::Time dt = clock.restart();
+  //sf::Clock clock;
+  //sf::Time timeElapsed;
+  //sf::Time dt = clock.restart();
 
-  timeElapsed += dt;
+  //timeElapsed += dt;
 
-  float dtAsSeconds = dt.asSeconds();
+  //float dtAsSeconds = dt.asSeconds();
 
   //Context setting for using openGL on SFML
   sf::ContextSettings settings;
@@ -161,7 +161,7 @@ int main()
   }
   else
   {
-    if(GLEW_VERSION_3_3)
+    if(GLEW_VERSION_3_0)
     {
       std::cout<<"Driver supports openGL 3.3\nDetails:"<<std::endl;
     }
